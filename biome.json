@@ -27,7 +27,7 @@
     "lineEnding": "lf"
   },
   "javascript": {
-    "globals": ["BaseRecord"],
+    "globals": [],
     "formatter": {
       "enabled": true,
       "indentStyle": "space",
