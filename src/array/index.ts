@@ -5,7 +5,7 @@ export const treeToList = <T extends BaseRecord>(
   childrenKey = 'children',
   isDepthFirst = true
 ) => {
-  const stack = tree.concat([])
+  const stack = tree.slice()
   const result: T[] = []
   while (stack.length > 0) {
     const topItem = stack.shift()
