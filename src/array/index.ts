@@ -14,9 +14,9 @@ export const treeToList = <T extends BaseRecord>(
       const children = topItem[childrenKey]
       if (Array.isArray(children)) {
         if (isDepthFirst) {
-          result.unshift(...children)
+          stack.unshift(...children)
         } else {
-          result.push(...children)
+          stack.push(...children)
         }
       }
     }
